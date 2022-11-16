@@ -8,11 +8,12 @@ DATABASE_URL="Url to your data base"
 
 
 <br>
-
+<h3>On terminal</h3>
 <code>
 npx prisma migrate dev
 </code>
   
+  <br>
   <br>
   
 <code>
