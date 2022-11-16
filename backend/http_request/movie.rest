@@ -1,0 +1,50 @@
+
+####  Get all GRS
+GET http://localhost:3033/movie/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjQsImlhdCI6MTY2MjM5Mzg3OCwiZXhwIjoxNjYyNDI5ODc4fQ.Ul4eOHxsMM2emyGGosSLG_peJRuAGhjyila6yGG53Gg
+
+
+####  Get GRS by Id
+GET http://localhost:3033/movie/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhbnZhcjAxNDIiLCJjcmVhdGVkQXQiOiIyMDIyLTAzLTI0VDEyOjQxOjEwLjU1NloiLCJ1cGRhdGVkQXQiOiIyMDIyLTAzLTI0VDEyOjQxOjEwLjU1NloiLCJkZWxldGVkQXQiOm51bGwsInJvbGVJZCI6MSwiaWF0IjoxNjQ4MTg3MDIwLCJleHAiOjE2NDgyMjMwMjB9.Zs20B5eCcWYJRQgjksa0QISPDSQePFnsgeukxByAUVU
+
+###  Creating GRS
+POST http://localhost:3033/movie/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImlhdCI6MTY2NzU1MzY3MCwiZXhwIjoxNjY3NTg5NjcwfQ.Ixd_H4pMu8ic-4F-lRWfXDJ5aGT970joYBhftghJdks
+
+{
+  "title": "Социальная сеть (2010)",
+  "genre": "драма, биография",
+  "premuere": "24 сентября 2010",
+  "slogan": "Нельзя завести 500 миллионов друзей, не нажив ни одного врага",
+  "country": "США",
+  "ageRest": "12+",
+  "director": "David Fincher",
+  "description": "В фильме рассказывается история создания одной из самых популярных в Интернете социальных сетей - Facebook. Оглушительный успех этой сети среди пользователей по всему миру навсегда изменил жизнь студентов-однокурсников гарвардского университета, которые основали ее в 2004 году и за несколько лет стали самыми молодыми мультимиллионерами в США.",
+  "image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/04c60e22-8972-48a0-8945-019222065ae2/300x450",
+  "url": "https://www.sspoisk.ru/film/427198/"
+}
+
+####  UPDATE GRS
+PATCH http://localhost:3033/movie/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhbnZhcjAxNDIiLCJjcmVhdGVkQXQiOiIyMDIyLTAzLTI0VDEyOjQxOjEwLjU1NloiLCJ1cGRhdGVkQXQiOiIyMDIyLTAzLTI0VDEyOjQxOjEwLjU1NloiLCJkZWxldGVkQXQiOm51bGwsInJvbGVJZCI6MSwiaWF0IjoxNjQ4MTg3MDIwLCJleHAiOjE2NDgyMjMwMjB9.Zs20B5eCcWYJRQgjksa0QISPDSQePFnsgeukxByAUVU
+
+{
+  "name": "i5-10400f-updated"
+}
+
+#### DELETE MANY
+POST http://localhost:3033/movie/delete-many
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhbnZhcjAxNDIiLCJjcmVhdGVkQXQiOiIyMDIyLTAzLTI0VDEyOjQxOjEwLjU1NloiLCJ1cGRhdGVkQXQiOiIyMDIyLTAzLTI0VDEyOjQxOjEwLjU1NloiLCJkZWxldGVkQXQiOm51bGwsInJvbGVJZCI6MSwiaWF0IjoxNjQ4MTg3MDIwLCJleHAiOjE2NDgyMjMwMjB9.Zs20B5eCcWYJRQgjksa0QISPDSQePFnsgeukxByAUVU
+
+{
+  "ids": [2, 6]
+}
+
+
+####  Delete
+DELETE http://localhost:3033/movie/14
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhbnZhcjAxNDIiLCJjcmVhdGVkQXQiOiIyMDIyLTAzLTIyVDE2OjE4OjI1LjM1OFoiLCJ1cGRhdGVkQXQiOiIyMDIyLTAzLTIyVDE2OjE4OjI1LjM1OVoiLCJkZWxldGVkQXQiOm51bGwsInJvbGVJZCI6MSwiaWF0IjoxNjQ4MDE0MTE2LCJleHAiOjE2NDgwNTAxMTZ9.wukV2-4R2z2hlPHqLY7Qs6BTDQ-ECwychTE5i2I0IO0
