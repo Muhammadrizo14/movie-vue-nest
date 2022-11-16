@@ -1,9 +1,9 @@
-import user from "./seeders/user.seed";
+
 import movie from "./seeders/movie.seed";
 
 const {PrismaClient} = require('@prisma/client')
 const prisma = new PrismaClient()
-const seedData = [movie, user]
+const seedData = [movie]
 
 async function main() {
     for (let i = 0; i < seedData.length; i++) {

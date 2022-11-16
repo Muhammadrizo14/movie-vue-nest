@@ -2,7 +2,6 @@ import {IsNotEmpty} from "class-validator";
 
 
 export class MovieEntity {
-    @IsNotEmpty()
     id: number;
     @IsNotEmpty()
     title: string;
