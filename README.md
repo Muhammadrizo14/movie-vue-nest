@@ -24,8 +24,18 @@ npx prisma migrate dev
 npx prisma db seed
 </code>
 
+
+<h1>Что-бы запустить Backend</h1>
+<code>
+npm run start:dev
+</code>
+
 <br>
 <h1>
 В папке frontend
 </h1>
 <code>npm i</code>
+
+<h1>Что-бы запустить Frontend</h1>
+<code>npm run serve</code>
+
