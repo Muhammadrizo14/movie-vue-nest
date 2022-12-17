@@ -26,6 +26,6 @@ npx prisma db seed
 
 <br>
 <h1>
-В папке front-end
+В папке frontend
 </h1>
 <code>npm i</code>
