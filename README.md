@@ -13,22 +13,16 @@
 
 <br>
 <h3>В терминале</h3>
-<code>
-npx prisma migrate dev
-</code>
+<code>npx prisma migrate dev</code>
   
   <br>
   <br>
   
-<code>
-npx prisma db seed
-</code>
+<code>npx prisma db seed</code>
 
 
 <h1>Что-бы запустить Backend</h1>
-<code>
-npm run start:dev
-</code>
+<code>npm run start:dev</code>
 
 <br>
 <h1>
